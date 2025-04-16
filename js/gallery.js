@@ -150,6 +150,11 @@ function displayServices() {
         
         galleryContainer.appendChild(col);
     });
+    
+    // Aplicar imágenes simuladas a los nuevos elementos creados
+    if (typeof mockServiceImages === 'function') {
+        mockServiceImages();
+    }
 }
 
 // Configurar los filtros

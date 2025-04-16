@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Función para reemplazar imágenes de servicios
-function mockServiceImages() {
+// Esta función se exporta para que pueda ser usada por otros scripts
+window.mockServiceImages = function() {
     // Mapa de categorías a temas de imágenes
     const categoryThemes = {
         'electricistas': 'tech',
